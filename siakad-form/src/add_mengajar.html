@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css" />
+
+    <title>Tambah Dosen</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-logo" href="#">SIAKAD.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto me-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="add_prodi.html">Tambah Prodi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add_dosen.html"
+                >Tambah Dosen
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add_matkul.html">Tambah Mata Kuliah </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tambah Jadwal </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main section -->
+    <main>
+      <div class="container-lg pt-5">
+        <!-- Heading -->
+        <h1>Tambahkan Jadwal Mengajar</h1>
+        <p>
+          Masukkan data jadwal mengajar dengan lengkap dan sesuai dengan data sebenarnya
+        </p>
+        <!-- Heading  -->
+
+        <!-- Form -->
+        <form class="pt-lg-5">
+          <div class="mb-3 col-6 input">
+            <label for="exampleInputEmail1" class="form-label">ID Jadwal</label>
+            <input
+              type="number"
+              class="form-control block-form"
+              placeholder="Masukkan ID Jadwal"
+            />
+          </div>
+          <div class="mb-3 col-6 input">
+            <label for="exampleInputPassword1" class="form-label"
+              >Hari & Jam</label
+            >
+            <input
+              type="datetime-local"
+              class="form-control block-form"
+              id="exampleInputPassword1"
+              placeholder="Masukkan Nama Dosen"
+            />
+          </div>
+          <div class="mb-3 col-6 input">
+            <label for="exampleInputPassword1" class="form-label"
+              >Program Studi</label
+            >
+            <select class="form-select block-form">
+              <option disabled selected>Pilih Program Studi</option>
+              <option>Matematika</option>
+              <option>Fisika</option>
+              <option>Biologi</option>
+              <option>Kimia</option>
+              <option>Teknik Lingkungan</option>
+              <option>Teknologi Informasi</option>
+            </select>
+          </div>
+          <div class="mb-3 col-6 input">
+            <label for="exampleInputPassword1" class="form-label">Dosen</label>
+            <select class="form-select block-form">
+              <option disabled selected>Pilih Dosen</option>
+              <option>Nur Cahyo Hendro Wibowo, S.T., M.Kom</option>
+              <option>Masy Ari Ulinuha, ST., M.T</option>
+              <option>Wenty Dwi Yuniarti, S. Pd., M. Kom</option>
+              <option>Khotibul Umam, ST., M.Kom</option>
+              <option>Muhammad. Chodzirin, M.Kom</option>
+              <option>Siti Nur Aini, S.Kom., M.Kom</option>
+              <option>M. Iklil Mustofam, S.Kom., M.Kom</option>
+              <option>Hery Mustofa, S.Kom., M. Kom</option>
+              <option>Adzhal Arwani Mahfudh, S.Kom., M. Kom</option>
+            </select>
+          </div>
+          <div class="mb-3 col-6 input">
+            <label for="exampleInputPassword1" class="form-label"
+              >Mata Kuliah</label
+            >
+            <select class="form-select block-form">
+              <option disabled selected>Pilih Mata Kuliah</option>
+              <option>Interaksi Manusia dan Komputer</option>
+              <option>Pengolahan Citra Digital</option>
+              <option>Kriptografi</option>
+              <option>Pemrograman Berorientasi Objek</option>
+              <option>Tauhid dan Akhlak Tasawuf</option>
+              <option>Pemrograman Web</option>
+              <option>Studi Al-Hadis</option>
+              <option>Kewirausahaan</option>
+              <option>Praktikum Pemrograman Web</option>
+              <option>Praktikum Perograman Berorientasi Objek</option>
+              <option>Islam dan Moderasi Beragama</option>
+              <option>Praktikum Pengolahan Citra Digital</option>
+            </select>
+          </div>
+          <button
+            type="submit"
+            class="btn bg-black text-white block-form mt-5 w-50 py-3 mb-5 input"
+          >
+            Tambahkan
+          </button>
+        </form>
+        <!-- Form -->
+      </div>
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
